@@ -1,0 +1,14 @@
+pipeline {
+   agent any
+   environment {
+      servicename = "testing"
+   }
+   stages {
+       stage ('First stage by arun'){
+          steps {
+              sh "echo testing"
+          }
+       }
+       
+   }
+}
