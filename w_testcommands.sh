@@ -15,3 +15,5 @@ then
 else
    echo "None of the condition met"
 fi
+
+Sample command 
