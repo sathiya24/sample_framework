@@ -8,9 +8,10 @@ echo "yes both are same"
 
 echo "no they are noty same"
 
-if (x==='5')
+if (x='5')
   echo "this is 5"
-else 
+then 
     echo "this is something else"
+fi
 
 
