@@ -1,19 +1,11 @@
 #!/bin/sh
 
-a=10
-b=20
+master=`git log master --format="%H" -n 3`
+test_branch=`git log main --format="%H" -n 1`
 
-if [ $a == $b ]
+if [ $master == $mybranch ]
 then
-   echo "a is equal to b"
-elif [ $a -gt $b ]
-then
-   echo "a is greater than b"
-elif [ $a -lt $b ]
-then
-   echo "a is less than b"
+   echo "yes they are same"
 else
-   echo "None of the condition met"
+   echo "No not same"
 fi
-
-Sample command 
