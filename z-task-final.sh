@@ -1,10 +1,11 @@
 #!/bin/sh
-git branch
-git add w_gitsync.sh
+
+x=`git rev-parse --abbrev-ref HEAD`
 git checkout main
 git pull
-git rev-list --count test_branch..main
-if [ $test_branch > $main ] 
+count=`git rev-list --count $x..main`
+echo $x $count
+if [ $count > 0 ] 
 then
     echo "not upto date"
 else
