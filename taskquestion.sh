@@ -1,4 +1,4 @@
-find the curent branch name and store to variable my_branch
+find the curent branch name and store to a variable "my_branch"
 checkout to main
 run git pull
 run reve list command for my_branch and output to variable "count"
