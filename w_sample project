@@ -1,0 +1,10 @@
+#!/bin/sh
+
+main=`git log main --format="%H" -n 1`
+test_branch=`git log test_branch --format="%H" -n 2`
+if [ $main = $test_branch ]
+then
+   echo "yes upto date"
+else
+   echo "No not upto date"
+fi
