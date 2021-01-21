@@ -5,7 +5,7 @@ git checkout main
 git pull 
 count=`git rev-list --count $test_branch..main`
 echo $my_branch $count
-if [ $count > $test_branch ] 
+if [ $count > $0] 
 then 
    echo " not upto date"
 else
