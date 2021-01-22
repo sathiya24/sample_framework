@@ -37,4 +37,8 @@ ret=$?
 echo "return value is $ret"
 
 
-$man command
+
+
+myFunction(a, b) {
+  return a * b;
+}
