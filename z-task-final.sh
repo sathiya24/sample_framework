@@ -8,10 +8,10 @@
 #if [ $count > 0 ] 
 #then
  #   echo "upto date"
-#lse
+#else
  #   echo "not upto date"
 #fi
-NAME="Bob"
+#NAME="Bob"
 
 #if [ "$NAME" == "Brad" ]
 #then
@@ -23,10 +23,19 @@ NAME="Bob"
 
 
 #FILE CONDITIONS
-FILE="test.txt"
-if [ -e "$FILE" ]
+#FILE="test.txt"
+#if [ -e "$FILE" ]
+#then 
+#echo "$FILE exists"
+#else
+#echo "$FILE does not exists"
+#fi
+
+
+
+word=abc
+
+if [ $word == "abbccc"
 then 
-echo "$FILE exists"
-else
-echo "$FILE does not exists"
+echo "condition is true"]
 fi
