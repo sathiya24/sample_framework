@@ -1,44 +1,26 @@
-functions
-sathya(){
-    echo "Hello $3 $2 "
-    return 10
+#functions
+Hello() {
+    echo "hello world $3 $2"
+    return 20
 }
 
-sathya vik var vai aru
+Hello
 
 ret=$?
-echo "return value is $ret"
 
-number_one () {
-    echo "Alpha calling .....over"
-    number_two
+echo "returning to return value $ret"
+
+Hello() {
+    echo " this is the first calling"
+    hello2
 }
-number_two(){
-    echo "Beta calling......over"
-}
-
-
-number_one
-
-
-
-number_one () {
-   echo "This is the first function speaking..."
-   number_two
+hello2() {
+    echo "this is the second calling"
+    Hello
 }
 
-number_two () {
-   echo "This is now the second function speaking..."
-   return 20
+Hello() {
+    echo "sathya"
 }
 
-number_one
-ret=$?
-echo "return value is $ret"
-
-
-
-
-myFunction(a, b) {
-  return a * b;
-}
+Hellorm main
