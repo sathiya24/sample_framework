@@ -8,4 +8,6 @@ mkdir thumbnails8
 jq -c -r '.[] | .url + " " + .thumbnailUrl' input.json | while read i; do
     echo $i -P ./images8
     echo $i -P ./thumbnails8
-done
+     
+     
+
